@@ -21,25 +21,33 @@ Comando para executar imagem na porta 15672
 
 url: 
 >http://127.0.0.1:1567/
-**user:** guest 
-**password:** guest
+>
+>**user:** guest 
+>
+>**password:** guest
 
 - **Step 3 -WebAPI**
 
 Efetuar clone do projeto 
 >cd\
-mkdir repo
-cd repo
-git clone https://github.com/uhernfr/netCoreWebAPIWithRabbitMQ.git
+>
+>mkdir repo
+>
+>cd repo
+>
+>git clone https://github.com/uhernfr/netCoreWebAPIWithRabbitMQ.git
 
 Restore, Build
 >dotnet restore
-dotnet build
-dotnet run --p netCoreWebAPIWithRabbitMQ
+>
+>dotnet build
+>
+>dotnet run --p netCoreWebAPIWithRabbitMQ
 
 Swagger
 > url: http://localhost:5000/index.html
 
 Endpoints: 
 >**POST** /api/RabbitMQProducer - grava conteudo do parametro message na fila
-**GET** /api/RabbitMQConsumer - le o conteudo da fila
+>
+>**GET** /api/RabbitMQConsumer - le o conteudo da fila
